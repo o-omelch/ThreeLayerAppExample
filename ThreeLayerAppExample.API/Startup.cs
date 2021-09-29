@@ -77,7 +77,7 @@ namespace ThreeLayerAppExample
 
       private void registerBLServices( IServiceCollection services )
       {
-         services.AddSingleton< ICarManager, CarManager> ();
+         services.AddScoped< ICarManager, CarManager> ();
       }
 
       private void registerDalServices(IServiceCollection services )
