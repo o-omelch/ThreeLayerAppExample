@@ -16,7 +16,8 @@ namespace ThreeLayerAppExample.API.MapperProfiles
       {
          CreateMap<CarDto, CarResponse>();
          CreateMap<CarCommand, CarDto>();
-         CreateMap<Car, CarDto>();
+         CreateMap<Car, CarDto>()
+            .ReverseMap();
       }
 
    }
